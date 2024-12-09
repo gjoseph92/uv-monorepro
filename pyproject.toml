@@ -1,0 +1,20 @@
+[project]
+name = "uv-monorepro"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "needs-things", "thing1"
+]
+
+[tool.uv.sources]
+needs-things = { workspace = true }
+thing1 = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[dependency-groups]
+dev = []
+

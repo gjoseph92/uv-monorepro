@@ -1,0 +1,11 @@
+[project]
+name = "needs-things"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["thing1", "thing2"]
+
+[tool.uv.sources]
+thing1 = { workspace = true }
+thing2 = { workspace = true }
